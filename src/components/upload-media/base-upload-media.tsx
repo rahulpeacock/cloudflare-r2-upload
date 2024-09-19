@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import { CloudUpload } from 'lucide-react';
-import { useRef, useState, type ChangeEvent, type DragEvent } from 'react';
+import { type ChangeEvent, type DragEvent, useRef, useState } from 'react';
 import { FILE_FORMATS, MAX_FILE_SIZE, MAX_FILE_SIZE_IN_MB } from './file-properties';
 // import { MediaPreview } from './media-preview';
 
