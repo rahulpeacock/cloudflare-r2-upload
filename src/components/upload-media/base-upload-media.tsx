@@ -1,10 +1,12 @@
+'use client';
+
 import { cn } from '@/lib/utils';
 import { CloudUpload } from 'lucide-react';
 import { type ChangeEvent, type DragEvent, useRef, useState } from 'react';
 import { FILE_FORMATS, MAX_FILE_SIZE, MAX_FILE_SIZE_IN_MB } from './file-properties';
 // import { MediaPreview } from './media-preview';
 
-export function UploadMediaForm() {
+export function UploadMedia() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [loading, setLoading] = useState(false);
@@ -55,7 +57,13 @@ export function UploadMediaForm() {
   }
 
   return (
-    <form className='p-6' onDragEnter={dragPreventDefault} onDragLeave={dragPreventDefault} onDragOver={dragPreventDefault} onDrop={handleDrop}>
+    <form
+      className='p-6 max-w-7xl mx-auto'
+      onDragEnter={dragPreventDefault}
+      onDragLeave={dragPreventDefault}
+      onDragOver={dragPreventDefault}
+      onDrop={handleDrop}
+    >
       <button
         type='button'
         className={cn(

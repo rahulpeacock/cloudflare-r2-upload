@@ -1,9 +1,13 @@
+import { UploadMedia as BaseUploadMedia } from '@/components/upload-media/base-upload-media';
+
 export default function Page() {
   return (
-    <div>
-      <main>
-        <p>Hello World</p>
-      </main>
-    </div>
+    <main>
+      <section>
+        <div>
+          <BaseUploadMedia />
+        </div>
+      </section>
+    </main>
   );
 }
